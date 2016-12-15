@@ -1,0 +1,74 @@
+@import "_mix";
+
+$rem: 1rem / 37.5;
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+   font-family: "Helvetica Neue",Helvetica,"PingFang SC","Hiragino Sans GB","Microsoft YaHei","微软雅黑",Arial,sans-serif;
+    color: #fff;
+}
+
+img {
+    width: 100%;
+    border: 0 none;
+    max-wdith: 100%;
+
+    @include feadIn;
+}
+
+
+.appnoticedetail {
+    padding: 0 ($rem * 10);
+
+    .hide {
+        display: none;
+    }
+
+    color: rgb(100, 100, 100);
+
+    @include font-dpr(14px);
+
+    .detailtitle {
+        @include font-dpr(15px);
+
+        color: #383838;
+        text-align: center;
+    }
+
+    .detailtime {
+        color: #9b9b9b;
+        text-align: center;
+
+        @include font-dpr(14px);
+    }
+
+    .detailcontext {
+        color: rgb(100, 100, 100);
+        line-height: 1.5;
+
+        @include font-dpr(14px);
+
+        text-align: left;
+        padding: ($rem * 10) 0;
+    }
+
+    .detailViewcon, .detailattachment {
+        padding: ($rem * 10) 0;
+
+        @include font-dpr(14px);
+    }
+
+    .detailimages {
+        span {
+            display: block;
+        }
+    }
+
+    .detailViewBtn {
+        color: rgb(0, 127, 255);
+    }
+}
